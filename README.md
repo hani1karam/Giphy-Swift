@@ -7,4 +7,5 @@ iOS Project implemented with Clean Layered Architecture and MVVM (in case Remote
 
 * Digram 
 
-  <img align="center" width="300" height="300" img src="Screen Shot 2022-10-21 at 2.24.59 PM.png">
+  <img align="left" width="300" height="300" img src="Screen Shot 2022-10-21 at 2.24.59 PM.png">
+  <img align="center" width="300" height="300" img src="Screen Shot 2022-12-25 at 6.30.46 PM.png">

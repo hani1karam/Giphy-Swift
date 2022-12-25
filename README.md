@@ -12,4 +12,6 @@ iOS Project implemented with Clean Layered Architecture and MVVM (in case Remote
 
 # Layers
 
-* Home Screen
+* UseCase
+* ViewModel
+* View

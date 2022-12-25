@@ -15,3 +15,5 @@ iOS Project implemented with Clean Layered Architecture and MVVM (in case Remote
 * UseCase
 * ViewModel
 * View
+
+# Notes: This Digram Supprot Remote Only.

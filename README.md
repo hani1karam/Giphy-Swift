@@ -16,12 +16,17 @@ iOS Project implemented with Clean Layered Architecture and MVVM (in case Remote
 * ViewModel
 * View
 
-# Notes: This Digram Supprot Remote Only.
+# Notes: 
+This Digram Supprot Remote Only.
 
 # Architecture concepts used here
 * Advanced iOS App Architecture https://www.raywenderlich.com/8477-introducing-advanced-ios-app-architecture
 * MVVM
 * Data Binding using Observable without 3rd party libraries
 * Error handling examples: in ViewModel, in Networking
+
+
+# Network
+If you would like to use Networking from this example project as repo I made it availabe here (https://github.com/hani1karam/NetworkManager)
 
 

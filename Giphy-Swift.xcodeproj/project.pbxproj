@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA95D725216C84B02B9EDB2A /* Pods_Giphy_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72158285B8A044C19890A917 /* Pods_Giphy_Swift.framework */; };
 		C1749218295682AC00C68A72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1749217295682AC00C68A72 /* AppDelegate.swift */; };
 		C1749221295682B100C68A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1749220295682B100C68A72 /* Assets.xcassets */; };
 		C1749224295682B100C68A72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1749222295682B100C68A72 /* LaunchScreen.storyboard */; };
@@ -42,9 +43,13 @@
 		C17493102957CF4E00C68A72 /* CellIdnetifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174930F2957CF4E00C68A72 /* CellIdnetifiers.swift */; };
 		C17493152957CFA100C68A72 /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17493132957CFA100C68A72 /* SliderCollectionViewCell.swift */; };
 		C17493162957CFA100C68A72 /* SliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C17493142957CFA100C68A72 /* SliderCollectionViewCell.xib */; };
+		C1E80977295B9B120042C02E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1E80976295B9B120042C02E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72158285B8A044C19890A917 /* Pods_Giphy_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Giphy_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		732D0455B16DE844378DF907 /* Pods-Giphy-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giphy-Swift.debug.xcconfig"; path = "Target Support Files/Pods-Giphy-Swift/Pods-Giphy-Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		902EC4ABCC09C94BCB35E4A0 /* Pods-Giphy-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Giphy-Swift.release.xcconfig"; path = "Target Support Files/Pods-Giphy-Swift/Pods-Giphy-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		C1749214295682AC00C68A72 /* Giphy-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giphy-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1749217295682AC00C68A72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1749220295682B100C68A72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 		C174930F2957CF4E00C68A72 /* CellIdnetifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdnetifiers.swift; sourceTree = "<group>"; };
 		C17493132957CFA100C68A72 /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		C17493142957CFA100C68A72 /* SliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCollectionViewCell.xib; sourceTree = "<group>"; };
+		C1E80976295B9B120042C02E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,18 +99,29 @@
 				C17492FC29578EF700C68A72 /* Alamofire in Frameworks */,
 				C17492F929578E0A00C68A72 /* SDWebImageMapKit in Frameworks */,
 				C17492F729578E0A00C68A72 /* SDWebImage in Frameworks */,
+				BA95D725216C84B02B9EDB2A /* Pods_Giphy_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1FA3FF2454557C86BC53147 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				732D0455B16DE844378DF907 /* Pods-Giphy-Swift.debug.xcconfig */,
+				902EC4ABCC09C94BCB35E4A0 /* Pods-Giphy-Swift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C174920B295682AC00C68A72 = {
 			isa = PBXGroup;
 			children = (
 				C1749216295682AC00C68A72 /* Giphy-Swift */,
 				C1749215295682AC00C68A72 /* Products */,
 				C174927F2956A08600C68A72 /* Frameworks */,
+				A1FA3FF2454557C86BC53147 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +148,7 @@
 		C174922B2956848A00C68A72 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C1E80976295B9B120042C02E /* GoogleService-Info.plist */,
 				C17492BE295744BA00C68A72 /* Fonts */,
 				C1749220295682B100C68A72 /* Assets.xcassets */,
 				C1749222295682B100C68A72 /* LaunchScreen.storyboard */,
@@ -219,6 +237,7 @@
 				C17492B12957407300C68A72 /* NetworkManager.framework */,
 				C17492822956A16300C68A72 /* libNetworkManager.a */,
 				C17492802956A08600C68A72 /* libNetworkManager.a */,
+				72158285B8A044C19890A917 /* Pods_Giphy_Swift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -236,7 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				C174930E2957CF1F00C68A72 /* Constant */,
-				C17492C42957458000C68A72 /* NetworkManage */,
+				C17492C42957458000C68A72 /* NetworkManager */,
 				C17492DB2957606900C68A72 /* Observable.swift */,
 				C17492EB2957810300C68A72 /* ClassName.swift */,
 				C17492FD2957927E00C68A72 /* register.swift */,
@@ -247,14 +266,14 @@
 			path = Domain;
 			sourceTree = "<group>";
 		};
-		C17492C42957458000C68A72 /* NetworkManage */ = {
+		C17492C42957458000C68A72 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
 				C17492C52957492000C68A72 /* DataProvider.swift */,
 				C17492C72957493D00C68A72 /* RequestManager.swift */,
 				C17492C92957495300C68A72 /* SessionManager.swift */,
 			);
-			path = NetworkManage;
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 		C17492E1295766A600C68A72 /* Configurator */ = {
@@ -325,10 +344,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1749228295682B100C68A72 /* Build configuration list for PBXNativeTarget "Giphy-Swift" */;
 			buildPhases = (
+				D15E7E5B7C3BDFE876EB79C8 /* [CP] Check Pods Manifest.lock */,
 				C1749210295682AC00C68A72 /* Sources */,
 				C1749211295682AC00C68A72 /* Frameworks */,
 				C1749212295682AC00C68A72 /* Resources */,
 				C1749235295691BC00C68A72 /* ShellScript */,
+				529216F1DE2FDE7945C4DA15 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -390,6 +411,7 @@
 			files = (
 				C17492C0295744CF00C68A72 /* Cairo-Regular.ttf in Resources */,
 				C1749224295682B100C68A72 /* LaunchScreen.storyboard in Resources */,
+				C1E80977295B9B120042C02E /* GoogleService-Info.plist in Resources */,
 				C17492E0295765C000C68A72 /* HomeViewController.xib in Resources */,
 				C17492EA29577B8A00C68A72 /* CatrogiesTableViewCell.xib in Resources */,
 				C17492C2295744D800C68A72 /* Cairo-Bold.ttf in Resources */,
@@ -402,6 +424,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		529216F1DE2FDE7945C4DA15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Giphy-Swift/Pods-Giphy-Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Giphy-Swift/Pods-Giphy-Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Giphy-Swift/Pods-Giphy-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C1749235295691BC00C68A72 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,6 +457,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		D15E7E5B7C3BDFE876EB79C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Giphy-Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -582,6 +643,7 @@
 		};
 		C1749229295682B100C68A72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732D0455B16DE844378DF907 /* Pods-Giphy-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -610,6 +672,7 @@
 		};
 		C174922A295682B100C68A72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 902EC4ABCC09C94BCB35E4A0 /* Pods-Giphy-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

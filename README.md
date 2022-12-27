@@ -30,7 +30,7 @@ This Digram Supprot Remote Only.
 If you would like to use Networking from this example project as repo I made it availabe here (https://github.com/hani1karam/NetworkManager)
 
 # Remote Config 
-Using Firebase Remote Config (TO Hide Or Show AnyThing When App Relase).
+* Using Firebase Remote Config (TO Hide Or Show AnyThing When App Relase).
   <img align="center" width="300" height="300" img src="Screen Shot 2022-12-27 at 11.38.10 PM.png"> .
   
 # swiftLint

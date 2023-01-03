@@ -10,7 +10,7 @@ import UIKit
 class HomeViewController: UIViewController,UIScrollViewDelegate{
     @IBOutlet weak var tableView: UITableView!
     var homeViewModel: HomeViewModelProtocol!
-    var adapter: HomeDataSource?
+    var dataSource: HomeDataSource?
     private lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         return refreshControl
@@ -32,15 +32,19 @@ class HomeViewController: UIViewController,UIScrollViewDelegate{
         viewModel?.loading.observe(on: self) { [weak self] isLoading in
             isLoading ? self?.showLoader() : self?.hideLoader()
         }
-        
         viewModel?.sectionsList.observe(on: self) { [weak self] list in
             self?.updateTableViewDataSource(list ?? [])
+            if self?.homeViewModel.valueConfiguration.value == true {
+                self?.tableView.isHidden = true
+            }else{
+                self?.tableView.isHidden = false
+            }
         }
     }
     private func updateTableViewDataSource(_ list: [HomeSectionViewModel]) {
-        adapter = .init(list)
-        tableView.delegate = adapter
-        tableView.dataSource = adapter
+        dataSource = .init(list)
+        tableView.delegate = dataSource
+        tableView.dataSource = dataSource
         tableView.reloadData()
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
